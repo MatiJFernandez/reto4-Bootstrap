@@ -1,0 +1,7 @@
+.custom-bg {
+    background-color: #2196F3; 
+    border: none;/* Cambia esto al color que desees */
+}
+.custom-bg .nav-link {
+    color: rgb(0, 0, 0); /* Cambia el color del texto de los enlaces */
+}
