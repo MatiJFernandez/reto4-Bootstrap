@@ -1,7 +1,13 @@
-.custom-bg {
-    background-color: #2196F3; 
-    border: none;/* Cambia esto al color que desees */
+.selector-for-some-widget {
+    box-sizing: content-box;
 }
-.custom-bg .nav-link {
-    color: rgb(0, 0, 0); /* Cambia el color del texto de los enlaces */
+
+.containerContenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img/78792.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
