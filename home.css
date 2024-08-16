@@ -7,3 +7,13 @@ main{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#logo{
+    height: 250px;
+    width: auto;
+}
+
+#logo-lateral{
+    height: 50px;
+    width: auto;
+}
