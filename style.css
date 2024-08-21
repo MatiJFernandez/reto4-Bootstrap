@@ -1,13 +1,17 @@
-.selector-for-some-widget {
-    box-sizing: content-box;
+.fondo {
+    min-height: 100vh;
+    background-image: url(./fondoBoots.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.containerContenido {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("/img/78792.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .fondo {
+        background-image: none;
+        background-color: white;
+        background-attachment: scroll;
+    }
 }
