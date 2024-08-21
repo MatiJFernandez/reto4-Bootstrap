@@ -1,0 +1,17 @@
+.fondo {
+    min-height: 100vh;
+    background-image: url(/img/fondoBoots.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .fondo {
+        background-image: none;
+        background-color: white;
+        background-attachment: scroll;
+    }
+}

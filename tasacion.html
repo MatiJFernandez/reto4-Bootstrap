@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+    <head>
+      <title>Tasacion</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <link rel="stylesheet" href="CSS/style.css">
+      <!-- Bootstrap CSS v5.2.1 -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+      <!-- Bootstrap icon -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+      <link rel="stylesheet" href="CSS/home.css">
+
+      <link rel="stylesheet" href="CSS/form.css">
+    </head>
+    <body style="background-color: #f5f5f5;">
+      <header>
+        <!-- barra de navegación -->
+        <nav class="navbar navbar-dark bg-primary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="bi bi-info-circle text-white"></span>
+            </button>
+            <div class="col-auto">
+              <ul class="list-inline mb-0 text-end">
+                <li class="list-inline-item">
+                  <a class="text-dark text-decoration-none d-flex align-items-center" href="home.html">
+                      <span class="d-none d-sm-inline">Inicio</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark text-decoration-none d-flex align-items-center" href="propiedades.html">
+                    <i class="bi bi-house text-white me-2"></i>
+                    <span class="d-none d-sm-inline">Propiedades</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark text-decoration-none d-flex align-items-center" href="">
+                    <i class="bi bi-clipboard-check text-white me-2"></i>
+                    <span class="d-none d-sm-inline">Tasación</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark text-decoration-none d-flex align-items-center" href="nosotros.html">
+                    <i class="bi bi-people text-white me-2"></i>
+                    <span class="d-none d-sm-inline">Nosotros</span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <!-- Botón para abrir el modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#customModal">
+                      <i class="bi bi-person text-white me-2"></i>
+                      <span class="d-none d-sm-inline">Login</span>
+                    </button>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="customModalLabel">Bienvenido!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Username">
+                              </div>
+                              <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                              </div>
+                              <div class="d-flex flex-column gap-2">
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Registrarse</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+    
+    
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <a href=""><img id="logo-lateral" src="img/logo-diseno-letra-n.png" alt=""></a>
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-column">
+                  <li class="nav-item mb-3">
+                    <div class="p-3 bg-light rounded">
+                      <h3 class="h5 mb-0"><strong>Ubicación:</strong> Constitución 716, X5800 Río Cuarto, Córdoba</h3>
+                    </div>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <div class="p-3 bg-light rounded">
+                      <h3 class="h5 mb-0"><strong>Horario oficina:</strong> Lunes a Viernes de 8:00 - 16:00</h3>
+                    </div>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <div class="p-3 bg-light rounded">
+                      <h3 class="h5 mb-0"><strong>Teléfono:</strong> 0358 464-3036</h3>
+                    </div>
+                  </li>
+                </ul>
+                <div class="card p-3">
+                  <a href="https://www.instagram.com/itecriocuarto/" class="text-decoration-none me-3">
+                    <i class="bi bi-instagram fs-4"> Instagram</i>
+                  </a>
+                  <a href="https://www.facebook.com/iTecRioCuarto" class="text-decoration-none me-3">
+                    <i class="bi bi-facebook fs-4"> Facebook</i>
+                  </a>
+                  <a href="https://wa.me/1234567890" target="_blank" class="text-decoration-none">
+                    <i class="bi bi-whatsapp fs-4"> Whatsapp</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </nav>
+
+
+
+      </header>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Comprar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tasacion</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Alquilar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Emprendimientos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Franquicias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          <li class="nav-item"><a href="#" class="btn btn-primary btn-sm" style="background-color: white; color: #3498db;">Iniciar Sesión</a></li>
+        </ul>
+      </div> -->
+
+
+
+      <div class="container content" style="background-color: #f5f5f5;"> 
+        <div class="row">
+          <div class="col-md-6 form-container" id="izq">
+            <div class="form-header">
+              <h1>Tasa tu propiedad</h1>
+              <p>Completá el formulario y una oficina adherida a la red HABITAR se pondrá en contacto con vos para continuar con el proceso</p>
+            </div>
+            
+            <form>
+              <div class="form-group">
+                <label for="name">Nombre y apellido *</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Teléfono *</label>
+                <input type="tel" class="form-control" id="phone" required>
+                <small class="form-text text-muted">Ingrese un número completo con código de área. Ej: 112345678 (CABA) o 3511234567 (Ciudad de Córdoba)</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="location">Localidad/provincia *</label>
+                <input type="text" class="form-control" id="location" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="propertyType">Tipo de propiedad *</label>
+                <select class="form-control" id="propertyType" required>
+                  <option value="" disabled selected>Seleccionar</option>
+                  <option value="casa">Casa</option>
+                  <option value="departamento">Departamento</option>
+                  <option value="terreno">Terreno</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="comments">Comentarios</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+                <small class="form-text text-muted">0/250</small>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            
+            <p>Al enviar se están aceptando los <a id="termino" href="#">Términos y Condiciones de Uso</a> y la <a id="politica" href="#">Política de Privacidad</a></p>
+          </div>
+          <div class="col-md-6 d-none d-md-block" id="der">
+            <div class="img-container">
+              <!-- <div style="height: 200px;"></div> -->
+              <img src="img/hogar3.jpg" alt="Hogar" class="img-fluid" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-primary fixed-bottom">
+        <div class="container-fluid text-center">
+          <br>
+          <p>© Derechos reservados 2024. Hecho por <a class="text-dark" href="https://www.itecriocuarto.org.ar/">ITEC</a>.
+          </p>
+          <i class=""></i>
+        </div>
+      </footer>
+
+
+
+      <script src="js/menu.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous">
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous">
+      </script>
+    </body>
+
+</html>

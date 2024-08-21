@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style-propiedades.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Propiedades</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- barra de navegación -->
+        <nav class="navbar navbar-dark bg-primary fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="bi bi-info-circle text-white"></span>
+                </button>
+                <div class="col-auto">
+                    <ul class="list-inline mb-0 text-end">
+                        <li class="list-inline-item">
+                            <a class="text-dark text-decoration-none d-flex align-items-center" href="home.html">
+                                <span class="d-none d-sm-inline">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark text-decoration-none d-flex align-items-center" href="propiedades.html">
+                                <i class="bi bi-house text-white me-2"></i>
+                                <span class="d-none d-sm-inline">Propiedades</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark text-decoration-none d-flex align-items-center" href="tasacion.html">
+                                <i class="bi bi-clipboard-check text-white me-2"></i>
+                                <span class="d-none d-sm-inline">Tasación</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-dark text-decoration-none d-flex align-items-center" href="nosotros.html">
+                                <i class="bi bi-people text-white me-2"></i>
+                                <span class="d-none d-sm-inline">Nosotros</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <!-- Botón para abrir el modal -->
+                                <button type="button" class="btn btn-white" data-bs-toggle="modal"
+                                    data-bs-target="#customModal">
+                                    <i class="bi bi-person text-white me-2"></i>
+                                    <span class="d-none d-sm-inline text-white">Login</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <a href=""><img id="logo-lateral" src="img/logo-diseno-letra-n.png" alt=""></a>
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-column">
+                            <li class="nav-item mb-3">
+                                <div class="p-3 bg-light rounded">
+                                    <h3 class="h5 mb-0"><strong>Ubicación:</strong> Constitución 716, X5800 Río Cuarto,
+                                        Córdoba</h3>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <div class="p-3 bg-light rounded">
+                                    <h3 class="h5 mb-0"><strong>Horario oficina:</strong> Lunes a Viernes de 8:00 -
+                                        16:00</h3>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <div class="p-3 bg-light rounded">
+                                    <h3 class="h5 mb-0"><strong>Teléfono:</strong> 0358 464-3036</h3>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card p-3">
+                            <a href="https://www.instagram.com/itecriocuarto/" class="text-decoration-none me-3">
+                                <i class="bi bi-instagram fs-4"> Instagram</i>
+                            </a>
+                            <a href="https://www.facebook.com/iTecRioCuarto" class="text-decoration-none me-3">
+                                <i class="bi bi-facebook fs-4"> Facebook</i>
+                            </a>
+                            <a href="https://wa.me/1234567890" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-whatsapp fs-4"> Whatsapp</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="btn-group propiedades-dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Propiedades
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" id="elemento_alquilar">Alquilar</a>
+            </li>
+            <li>
+                <a class="dropdown-item" id="elemento_comprar">Comprar</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-text">
+        <p class="fw-bold text-center fs-5">¡Encontrá el hogar de tus sueños acá!</p>
+    </div>
+
+    <div id="carouselExample" class="carousel slide mt-5">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/departamento_4/0c5e6f1d-2d17-4607-bcd8-be274544369e.webp" class="d-block"
+                    alt="img-carousel-04">
+            </div>
+            <div class="carousel-item">
+                <img src="img/departamento_1/10317e1f-d630-4e71-b7c1-880a0650e701.webp" class="d-block "
+                    alt="img-carousel-01">
+            </div>
+            <div class="carousel-item">
+                <img src="img/departamento_2/0de05a72-625b-47fd-92a7-6a297b5a9f92.webp" class="d-block"
+                    alt="img-carousel-02">
+            </div>
+            <div class="carousel-item">
+                <img src="img/departamento_3/3065fe33-5861-4282-89b2-cf7166c36598.webp" class="d-block"
+                    alt="img-carousel-03">
+            </div>
+            <div class="carousel-item">
+                <img src="img/casa_3/13b0be1f-4282-418a-a884-dd8480529970.webp" class="d-block" alt="img-carousel-04">
+            </div>
+            <div class="carousel-item">
+                <img src="img/casa_4/d19c6147-e0f7-4fe1-9d77-6cbe28788704.webp" class="d-block " alt="img-carousel-05">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 mb-3" id="alquilar" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="img/departamento_1/10317e1f-d630-4e71-b7c1-880a0650e701.webp" alt="card-img01"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Departamento amplio</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona centro, Río cuarto, Córdoba.</p>
+                        <a href="depto1.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/departamento_1/agentimage49780_11_05_2023_10_41_58.webp"
+                                alt="img-propietario" class="img-fluid rounded-circle me-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">Agustina Alma Sanchez</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="alquilar2" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="img/departamento_2/0de05a72-625b-47fd-92a7-6a297b5a9f92.webp" alt="card-img02"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Departamento lujoso</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona Macro centro, Rio Cuarto, Córdoba.</p>
+                        <a href="depto2.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/departamento_2/agentimage46426_03_08_2023_06_26_36.webp"
+                                alt="img-propietario" class="img-fluid rounded-circle me-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">Marcelo Dominguez</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="comprar" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="imgs/casa_1/09ad6b78-fb7d-4775-9afe-d031fad8114b.webp" alt="card-img02"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Casa familiar</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona Barrio Alberdi, Rio Cuarto, Córdoba.</p>
+                        <a href="casa1.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/casa_1/agentimage11091_10_01_2023_10_30_17.webp" alt="img-propietario"
+                                class="img-fluid rounded-circle me-3" style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">Delfina Gutiérrez</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="alquilar3" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="img/departamento_3/3065fe33-5861-4282-89b2-cf7166c36598.webp" alt="card-img02"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Departamento económico</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona Micro centro, Río cuarto, Córdoba.</p>
+                        <a href="depto3.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/departamento_3/agentimage27191375_14_03_2024_04_38_11_738.webp"
+                                alt="img-propietario" class="img-fluid rounded-circle me-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">José Alberto Güemes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="comprar2" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="img/casa_2/194010a0-3d28-40dd-b9b9-459ed3b06d25.webp" alt="card-img02"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Casa lujosa</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona Lago Villa Dalcar, Río cuarto, Córdoba.</p>
+                        <a href="casa2.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/casa_2/agentimage12787633_08_02_2024_11_13_56_343.webp" alt="img-propietario"
+                                class="img-fluid rounded-circle me-3" style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">Ricardo Fernández</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="comprar3" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="img/casa_3/13b0be1f-4282-418a-a884-dd8480529970.webp" alt="card-img02"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Casa Grande</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona Barrio Universidad, Río cuarto, Córdoba.</p>
+                        <a href="casa3.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/casa_3/agentimage38872_28_09_2021_11_47_30.webp" alt="img-propietario"
+                                class="img-fluid rounded-circle me-3" style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">Florencia Casas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="alquilar4" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="img/departamento_4/0c5e6f1d-2d17-4607-bcd8-be274544369e.webp" alt="card-img02"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Nuevo conjunto de edificios</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona Centro, Río cuarto, Córdoba.</p>
+                        <a href="depto4.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/departamento_4/agentimage31712080_14_06_2024_11_30_23_207.webp"
+                                alt="img-propietario" class="img-fluid rounded-circle me-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">Ignacio Flores Velázquez</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3" id="comprar4" style="display: visible">
+                <div class="card d-flex flex-row">
+                    <img src="img/casa_4/4ca4e195-d601-4def-97fd-269490f2a16e.webp" alt="card-img02"
+                        style="width: 40%; height: 50%;" class="ms-3 mt-5">
+                    <div class="card-body">
+                        <h1 class="fw-bold fs-3 mt-5 ms-2">Casa antigua</h1>
+                        <p class="text-muted ms-2 mt-2 fw-lighter">Zona Andino, Río cuarto, Córdoba.</p>
+                        <a href="casa4.html" class="btn btn-primary ms-2 mt-2" style="width: 130px; height: 40px;">Ver
+                            más</a>
+                        <div class="d-flex justify-content-end align-items-center mt-5">
+                            <img src="img/casa_4/agentimage43757_07_02_2023_01_38_47.webp" alt="img-propietario"
+                                class="img-fluid rounded-circle me-3" style="width: 70px; height: 70px;">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-muted fs-6 fw-lighter">Propietario:</h3>
+                                <p class="fw-bold fst-italic">Sandra Menta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primary flex-column w-100">
+        <div class="container-fluid text-center">
+            <br>
+            <p>© Derechos reservados 2024. Hecho por <a class="text-dark"
+                    href="https://www.itecriocuarto.org.ar/">ITEC</a>.
+            </p>
+            <i class=""></i>
+        </div>
+    </footer>
+</body>
+<script src="JS/script01.js"></script>
+
+</html>

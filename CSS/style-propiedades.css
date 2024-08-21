@@ -1,0 +1,68 @@
+body {
+    overflow-x: hidden;
+}
+.navbar-logo {
+    height: 70px;
+}
+.dropdown-item:hover {
+    cursor: pointer;
+}
+
+.propiedades-dropdown {
+    position: absolute;
+    left: 30px;
+    margin-top: -35px;
+}
+
+.container-text {
+    margin-top: 100px;
+}
+
+.carousel-inner img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.carousel-control-prev {
+    left: 150px;
+}
+
+.carousel-control-next {
+    right: 150px;
+}
+
+.row {
+    margin-top: 250px;
+}
+
+.card {
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card img {
+    border-radius: 3px;
+}
+
+
+.card-title {
+    width: 200px;
+    color: #7e7d7d;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top:10%;
+    margin: auto;
+    padding: 7%;
+}
